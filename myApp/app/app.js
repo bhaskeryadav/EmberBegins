@@ -46,10 +46,10 @@ import Person from './helpers/person';
 
   // myTimeManager.set("time",22);
 
-  import father from './helpers/father';
+  import mother from './helpers/father';
   import child from './helpers/child';
   
-  let ajay = father.create({
+  let ajay = mother.create({
     name:'Ajay',
     age:40,
     address:'Whitefield'
