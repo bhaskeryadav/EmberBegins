@@ -1,11 +1,39 @@
+<section class="mywidth">
+<div class="container">
+                    <table class="table" >
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Headquaters</th>
+                                <th>Revenue</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each model as  |item| }}
+                            <tr>
+                                {{!-- <th bgcolor="{{color}}"> --}}
+                                <th class="{{color}}">
+                                    {{item.name}}
+                                </th>
+                                <th class="{{color2}}">{{item.headquarters}}</th>
+                                <th class="{{color3}}">{{item.revenue}}</th>
+                            </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                	{{!-- {{#if edit}}
+                        <ul class="list-group">
+                            {{#each model as  |item| }}
+                            <li class="list-group-item">{{item}}</li>
+                            {{/each}}
+                        </ul>      
+                    {{/if}} --}}
+        
+</div>
 
-This is the {{model.name}}. <br>
-I make the SPA app work :-)
+	 
+	<button {{action 'changeEdit'}} 
+	         class="btn btn-primary" >Toggle
+	</button>
 
-<ul>
-	{{#each model.values as |item|}}
-		<li>{{item}}</li>
-	{{/each}}
-
-    
-</ul>
+</section>
