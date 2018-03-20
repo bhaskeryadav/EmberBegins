@@ -4,6 +4,7 @@ export default Route.extend({
    
    actions:{        
         createBook: function(){
+            console.log("Inside create book");
             var that = this;
            
             var publisher = that.store.createRecord("publisher",{
