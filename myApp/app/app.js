@@ -49,19 +49,19 @@ import Person from './helpers/person';
   import mother from './helpers/father';
   import child from './helpers/child';
   
-  let ajay = mother.create({
-    name:'Ajay',
-    age:40,
-    address:'Whitefield'
-  });
+  // let ajay = mother.create({
+  //   name:'Ajay',
+  //   age:40,
+  //   address:'Whitefield'
+  // });
   
-  var ram = child.create({
-    school:'Whitefield High School',
-    father: ajay
-  });
+  // var ram = child.create({
+  //   school:'Whitefield High School',
+  //   father: ajay
+  // });
   
-  console.log("child's addr: " ,  ram.get('address'));
-  ajay.set('address','Mysore');
-  console.log("child's addr: " , ram.get('address'));
+  // console.log("child's addr: " ,  ram.get('address'));
+  // ajay.set('address','Mysore');
+  // console.log("child's addr: " , ram.get('address'));
 
 export default App;

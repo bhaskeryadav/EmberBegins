@@ -1,0 +1,12 @@
+<h3>Commits</h3>
+{{#each model  as |c|}}
+<div class="well">
+  <div class="sha"><b><em>Sha</em>:</b> {{#link-to 'restapi.commit' c}}
+                   {{c.sha}}{{/link-to}}</div>
+  <div class="author"><b><em>Author</em>:</b> {{c.commit.author.name}}</div>
+  <div class="message"><b><em>Message</em>:</b> {{c.commit.message}}</div>
+</div>
+
+{{/each}}
+
+{{outlet}}

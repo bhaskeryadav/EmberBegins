@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="jumbotron">
+        <h2>Comming Soon...</h2>
+
+              <table>
+                <tr>
+                  <td colspan="2">
+                    Don't miss our launch date, request an invitation now.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input-group">
+                      
+                      {{input id="email" type="text" class="form-control" name="email" size="25" value=emailAdd placeholder="Please type your e-mail address" }}
+                      
+                    </div>
+                  </td>
+                  <td>
+                     <button type="button" class="btn btn-primary" {{action 'invite'}} disabled={{isDisabled}}>Request Invitation</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>
+                    {{#if visible}}
+                    <span class="alert alert-success">
+                      Thank You! Email saved: {{emailSent}} 
+                    </span>
+                    {{/if}}
+                  </td>
+                </tr>
+              </table>
+            
+  </div>
+
+</div>

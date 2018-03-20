@@ -1,0 +1,45 @@
+
+<div class="container">
+  <div class="jumbotron">
+    <h2><em>Using Forms</em></h2> 
+    <p>
+		<table>
+      <tr>
+        <td colspan="2"><span class="label label-default">Hi Mr {{fname}} {{lname}}</span></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="2">Last name is disabled: {{enableLname}}</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+             <div class="input-group">
+              <span class="input-group-addon">First Name:</span>
+              {{input type="text" name="fname" value=fname class="form-control" placeholder="First Info"}}
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+             <div class="input-group">
+              <span class="input-group-addon">Last Name:</span>
+              {{input type="text" name="lname" disabled=enableLname value=lname  class="form-control" placeholder="Last Name"}}
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td><span class="label label-default">Disable last name?</span></td>
+        <td>{{input type="checkbox" checked=enableLname }}</td>
+      </tr>
+
+    </table>
+	</p>
+	
+  </div>
+
+</div>
+
+
+ 
