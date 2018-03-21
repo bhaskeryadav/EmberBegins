@@ -1,0 +1,12 @@
+Static content:
+{{profile-card-static}}
+
+<hr>
+
+<p> Dynamic content #1: </p>
+
+{{profile-card name="Ravi Kumar" avatar="https://randomuser.me/api/portraits/thumb/lego/1.jpg" bio="Great artist"}}
+
+<hr>
+Dynamic content #2 (from route):
+{{profile-card name=model.name avatar=model.avatar bio = model.bio}} 
